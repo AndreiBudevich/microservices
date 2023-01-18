@@ -1,0 +1,45 @@
+jwt:
+  private.key: classpath:keys/jwt.pem
+  public.key: classpath:keys/jwt.pub
+  expiry: 3600 # expiration in second
+
+spring:
+  jpa:
+    show-sql: true
+    open-in-view: false
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 20
+        jdbc.batch_size: 20
+
+  jackson.visibility:
+    field: any
+    getter: none
+    setter: none
+    is-getter: none
+
+  cache:
+    cache-names: users
+    caffeine.spec: maximumSize=5000,expireAfterAccess=60s
+
+  sql:
+    init:
+      mode: always
+
+logging:
+  level:
+    root: WARN
+    com.mytt.authorizationservice: DEBUG
+    org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver: DEBUG
+
+server.servlet:
+  encoding:
+    charset: UTF-8
+    enabled: true
+    force: true
+
+springdoc.swagger-ui.path: /
