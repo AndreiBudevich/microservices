@@ -1,0 +1,23 @@
+version: '2'
+services:
+  app:
+    container_name: authorizationservice
+    image: authorizationservice
+    build: ./authorization-service/
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgesqldb:5432/authorizationDB
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_DATASOURCE_DRIVERCLASSNAME: org.postgresql.Driver
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgesqldb
+  postgesqldb:
+    image: postgres:13
+    ports:
+      - "5433:5433"
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=user
+      - POSTGRES_DB=authorizationDB
