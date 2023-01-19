@@ -1,6 +1,6 @@
 version: '2'
 services:
-  app:
+  authorizationservice:
     container_name: authorizationservice
     image: authorizationservice
     build: ./authorization-service/
@@ -13,6 +13,16 @@ services:
       - "8080:8080"
     depends_on:
       - postgesqldb
+
+  hashtranslatorservice:
+    container_name: hashtranslatorService
+    image: hashtranslatorservice
+    build: ./hashtranslator-service/
+    ports:
+        - "8090:8090"
+    depends_on:
+        - mongodb
+
   postgesqldb:
     image: postgres:13
     ports:
@@ -21,3 +31,11 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_USER=user
       - POSTGRES_DB=authorizationDB
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_DATABASE=hashtranslatorDB
