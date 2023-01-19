@@ -1,0 +1,33 @@
+jwt:
+  private.key: classpath:keys/jwt.pem
+  public.key: classpath:keys/jwt.pub
+  expiry: 3600 # expiration in second
+
+spring:
+  data:
+    mongodb:
+      host: mongodb
+      port: 27017
+      database: hashtranslatorDB
+
+  jackson.visibility:
+    field: any
+    getter: none
+    setter: none
+    is-getter: none
+
+logging:
+  level:
+    root: WARN
+    com.mytt.authorizationservice: DEBUG
+    org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver: DEBUG
+
+server.servlet:
+  encoding:
+    charset: UTF-8
+    enabled: true
+    force: true
+
+server:
+  port: 8090
+
