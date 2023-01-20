@@ -6,7 +6,7 @@ import com.mytt.authorizationservice.util.UserUtil;
 import com.mytt.common.error.IllegalRequestDataException;
 import com.mytt.common.model.Role;
 import com.mytt.common.web.JwtUser;
-import org.slf4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.WebDataBinder;
@@ -14,11 +14,8 @@ import org.springframework.web.bind.annotation.InitBinder;
 
 import java.util.Set;
 
-import static org.slf4j.LoggerFactory.getLogger;
-
+@Slf4j
 public abstract class AbstractUserController {
-
-    protected final Logger log = getLogger(getClass());
 
     @Autowired
     protected UserRepository repository;

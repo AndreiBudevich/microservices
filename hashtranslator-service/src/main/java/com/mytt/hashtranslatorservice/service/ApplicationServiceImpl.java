@@ -3,6 +3,7 @@ package com.mytt.hashtranslatorservice.service;
 import com.mytt.hashtranslatorservice.dto.ApplicationDto;
 import com.mytt.hashtranslatorservice.model.Application;
 import com.mytt.hashtranslatorservice.repository.ApplicationRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -11,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
+@Slf4j
 public class ApplicationServiceImpl implements ApplicationService {
 
     private final ApplicationRepository applicationRepository;
@@ -48,6 +50,7 @@ public class ApplicationServiceImpl implements ApplicationService {
     }
 
     private static String getMD5(String hash) {
+        log.info("request " + URI);
         String uri = URI + hash + "&hash_type=" + HASH_TYPE + "&email=" + EMAIL + "&code=" + CODE;
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(uri, String.class);
