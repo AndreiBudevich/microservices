@@ -1,4 +1,4 @@
-package com.mytt.authorizationservice.util.validation;
+package com.mytt.common.model.util.util.validation;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

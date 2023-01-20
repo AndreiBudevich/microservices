@@ -1,4 +1,4 @@
-package com.mytt.authorizationservice.error;
+package com.mytt.common.model.util.error;
 
 import org.springframework.http.HttpStatus;
 

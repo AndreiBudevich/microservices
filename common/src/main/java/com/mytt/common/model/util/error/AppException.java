@@ -1,4 +1,4 @@
-package com.mytt.authorizationservice.error;
+package com.mytt.common.model.util.error;
 
 import lombok.Getter;
 import org.springframework.http.HttpStatus;

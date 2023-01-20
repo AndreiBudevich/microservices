@@ -1,4 +1,4 @@
-package com.mytt.authorizationservice;
+package com.mytt.common.model.util;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.util.Assert;

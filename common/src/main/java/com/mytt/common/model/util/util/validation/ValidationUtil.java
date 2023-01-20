@@ -1,7 +1,7 @@
-package com.mytt.authorizationservice.util.validation;
+package com.mytt.common.model.util.util.validation;
 
-import com.mytt.authorizationservice.HasId;
-import com.mytt.authorizationservice.error.IllegalRequestDataException;
+import com.mytt.common.model.util.HasId;
+import com.mytt.common.model.util.error.IllegalRequestDataException;
 import lombok.experimental.UtilityClass;
 import org.springframework.core.NestedExceptionUtils;
 import org.springframework.lang.NonNull;
@@ -15,7 +15,6 @@ public class ValidationUtil {
         }
     }
 
-    //  Conservative when you reply, but accept liberally (http://stackoverflow.com/a/32728226/548473)
     public static void assureIdConsistent(HasId bean, int id) {
         if (bean.isNew()) {
             bean.setId(id);
@@ -37,7 +36,6 @@ public class ValidationUtil {
         return obj;
     }
 
-    //  https://stackoverflow.com/a/65442410/548473
     @NonNull
     public static Throwable getRootCause(@NonNull Throwable t) {
         Throwable rootCause = NestedExceptionUtils.getRootCause(t);
