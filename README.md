@@ -28,6 +28,11 @@ curl --location --request POST 'http://localhost:8080/api/admin/users' \
 "password": "user1"
 }'
 
+### Delete user
+
+curl --location --request DELETE 'http://localhost:8080/api/admin/users/3' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5ieSIsImlkIjoyLCJleHAiOjE2NzQyMjUxNjMsImlhdCI6MTY3NDIyMTU2Mywicm9sZXMiOiJVU0VSIEFETUlOIn0.fJNJZAxJnvJMXFlNjKLuWGFeaQSl85-5eAHVBb4l-PfVLUAPlzQnByxqoOTN0b0915f1VCt3M4yBECWP6eJKl5AWHKF-Zmgn4uwIudEygDRcmcblHuYbeBO_o49o3uP6L_39PfqFlqasmvdXbBSTcSE7BB6BRFAkvtVUSzLh4_gw0kHN0vVaTaM84HnKovdTpJn8WGefLB_uzI9bu6x4eXuclgnm1CrrNf5jcYc9ONvNNVpSXBemhxlCA9zYo-vPDZ-zc65KOyuVfxi5o3uuXnabrNNVik4--LU8i6r0SZOWGh1kiY9IMgd2-xAmjhNGF5qXAnsAGDTD3FBKkM0geg'
+
 ### Create application
 
 curl --location --request POST 'http://localhost:8090/api/users/application' \
