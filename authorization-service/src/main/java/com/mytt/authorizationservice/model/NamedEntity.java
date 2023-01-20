@@ -1,6 +1,6 @@
 package com.mytt.authorizationservice.model;
 
-import com.mytt.authorizationservice.util.validation.NoHtml;
+import com.mytt.common.util.validation.NoHtml;
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.validation.constraints.NotBlank;

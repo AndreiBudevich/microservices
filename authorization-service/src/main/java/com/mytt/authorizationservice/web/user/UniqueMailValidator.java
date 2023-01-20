@@ -2,7 +2,7 @@ package com.mytt.authorizationservice.web.user;
 
 import com.mytt.authorizationservice.repository.UserRepository;
 import com.mytt.authorizationservice.web.SecurityUtil;
-import com.mytt.common.model.util.HasIdAndEmail;
+import com.mytt.common.HasIdAndEmail;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.lang.NonNull;

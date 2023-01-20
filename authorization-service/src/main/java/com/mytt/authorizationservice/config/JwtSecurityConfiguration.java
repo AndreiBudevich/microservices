@@ -1,7 +1,7 @@
 package com.mytt.authorizationservice.config;
 
-import com.mytt.authorizationservice.model.Role;
-import com.mytt.authorizationservice.util.JwtUtil;
+import com.mytt.common.model.Role;
+import com.mytt.common.util.JwtUtil;
 import com.nimbusds.jose.jwk.JWK;
 import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;

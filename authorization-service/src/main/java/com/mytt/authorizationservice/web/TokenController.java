@@ -16,7 +16,7 @@
 
 package com.mytt.authorizationservice.web;
 
-import com.mytt.authorizationservice.util.JwtUtil;
+import com.mytt.authorizationservice.util.UserUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -46,7 +46,7 @@ public class TokenController {
         JwtClaimsSet.Builder claimsBuilder = JwtClaimsSet.builder()
                 .issuedAt(now)
                 .expiresAt(now.plusSeconds(expiry));
-        JwtUtil.addUserDetails(claimsBuilder, authUser);
+        UserUtil.addUserDetails(claimsBuilder, authUser);
         return encoder.encode(JwtEncoderParameters.from(claimsBuilder.build())).getTokenValue();
     }
 }

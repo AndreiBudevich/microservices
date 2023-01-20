@@ -1,7 +1,7 @@
 package com.mytt.authorizationservice.to;
 
-import com.mytt.authorizationservice.HasIdAndEmail;
-import com.mytt.authorizationservice.util.validation.NoHtml;
+import com.mytt.common.HasIdAndEmail;
+import com.mytt.common.util.validation.NoHtml;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

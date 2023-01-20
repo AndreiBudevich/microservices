@@ -13,8 +13,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 
-import static com.mytt.common.model.util.util.validation.ValidationUtil.assureIdConsistent;
-import static com.mytt.common.model.util.util.validation.ValidationUtil.checkNew;
+import static com.mytt.common.util.validation.ValidationUtil.assureIdConsistent;
+import static com.mytt.common.util.validation.ValidationUtil.checkNew;
 
 @RestController
 @RequestMapping(value = AdminUserController.REST_URL, produces = MediaType.APPLICATION_JSON_VALUE)

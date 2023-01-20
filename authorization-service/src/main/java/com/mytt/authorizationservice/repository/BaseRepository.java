@@ -6,8 +6,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.transaction.annotation.Transactional;
 
-import static com.mytt.authorizationservice.util.validation.ValidationUtil.checkExisted;
-import static com.mytt.authorizationservice.util.validation.ValidationUtil.checkModification;
+import static com.mytt.common.util.validation.ValidationUtil.checkExisted;
+import static com.mytt.common.util.validation.ValidationUtil.checkModification;
 
 @NoRepositoryBean
 public interface BaseRepository<T> extends JpaRepository<T, Integer> {

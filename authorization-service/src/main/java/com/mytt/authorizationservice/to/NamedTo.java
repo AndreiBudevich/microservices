@@ -1,6 +1,6 @@
 package com.mytt.authorizationservice.to;
 
-import com.mytt.authorizationservice.util.validation.NoHtml;
+import com.mytt.common.util.validation.NoHtml;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
