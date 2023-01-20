@@ -53,6 +53,7 @@ public class ApplicationServiceImpl implements ApplicationService {
         log.info("request " + URI);
         String uri = URI + hash + "&hash_type=" + HASH_TYPE + "&email=" + EMAIL + "&code=" + CODE;
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.getForObject(uri, String.class);
+        String result = restTemplate.getForObject(uri, String.class);
+        return result == null ? "" : result;
     }
 }
