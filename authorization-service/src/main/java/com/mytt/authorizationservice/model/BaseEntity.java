@@ -1,7 +1,6 @@
 package com.mytt.authorizationservice.model;
 
-import com.mytt.common.model.util.HasId;
-import io.swagger.v3.oas.annotations.media.Schema;
+import com.mytt.common.HasId;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.domain.Persistable;
@@ -18,7 +17,6 @@ public abstract class BaseEntity implements Persistable<Integer>, HasId {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Schema(hidden = true)
     protected Integer id;
 
     public int id() {
