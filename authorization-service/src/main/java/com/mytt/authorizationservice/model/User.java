@@ -1,8 +1,8 @@
 package com.mytt.authorizationservice.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.mytt.authorizationservice.HasIdAndEmail;
-import com.mytt.authorizationservice.util.validation.NoHtml;
+import com.mytt.common.model.util.HasIdAndEmail;
+import com.mytt.common.model.util.util.validation.NoHtml;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

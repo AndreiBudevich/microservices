@@ -1,6 +1,6 @@
 package com.mytt.authorizationservice.model;
 
-import com.mytt.authorizationservice.HasId;
+import com.mytt.common.model.util.HasId;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import lombok.*;
