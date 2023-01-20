@@ -1,4 +1,4 @@
-package com.mytt.common.model.util.error;
+package com.mytt.common.error;
 
 import lombok.Getter;
 import org.springframework.http.HttpStatus;

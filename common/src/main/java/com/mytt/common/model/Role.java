@@ -1,4 +1,4 @@
-package com.mytt.common.model.util.model;
+package com.mytt.common.model;
 
 import org.springframework.security.core.GrantedAuthority;
 
