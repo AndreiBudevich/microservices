@@ -1,10 +1,10 @@
 package com.mytt.authorizationservice.web.user;
 
-import com.mytt.authorizationservice.error.IllegalRequestDataException;
 import com.mytt.authorizationservice.model.User;
 import com.mytt.authorizationservice.repository.UserRepository;
 import com.mytt.authorizationservice.util.UserUtil;
-import com.mytt.authorizationservice.web.JwtUser;
+import com.mytt.common.model.util.error.IllegalRequestDataException;
+import com.mytt.common.model.util.web.JwtUser;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
