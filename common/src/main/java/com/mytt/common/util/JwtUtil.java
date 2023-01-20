@@ -1,7 +1,7 @@
-package com.mytt.common.model.util.util;
+package com.mytt.common.util;
 
-import com.mytt.common.model.util.model.Role;
-import com.mytt.common.model.util.web.JwtUser;
+import com.mytt.common.model.Role;
+import com.mytt.common.web.JwtUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.oauth2.jwt.Jwt;
 

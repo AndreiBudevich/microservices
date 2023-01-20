@@ -1,6 +1,6 @@
-package com.mytt.common.model.util.web;
+package com.mytt.common.web;
 
-import com.mytt.common.model.util.HasIdAndEmail;
+import com.mytt.common.HasIdAndEmail;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;

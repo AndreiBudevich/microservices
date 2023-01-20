@@ -1,7 +1,7 @@
-package com.mytt.common.model.util.util.validation;
+package com.mytt.common.util.validation;
 
-import com.mytt.common.model.util.HasId;
-import com.mytt.common.model.util.error.IllegalRequestDataException;
+import com.mytt.common.HasId;
+import com.mytt.common.error.IllegalRequestDataException;
 import lombok.experimental.UtilityClass;
 import org.springframework.core.NestedExceptionUtils;
 import org.springframework.lang.NonNull;

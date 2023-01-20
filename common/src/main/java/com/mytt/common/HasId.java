@@ -1,4 +1,4 @@
-package com.mytt.common.model.util;
+package com.mytt.common;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.util.Assert;

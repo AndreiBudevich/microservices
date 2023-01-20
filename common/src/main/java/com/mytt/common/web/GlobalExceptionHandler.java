@@ -1,6 +1,6 @@
-package com.mytt.common.model.util.web;
+package com.mytt.common.web;
 
-import com.mytt.common.model.util.error.AppException;
+import com.mytt.common.error.AppException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.MessageSource;

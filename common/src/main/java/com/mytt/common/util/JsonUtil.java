@@ -1,4 +1,4 @@
-package com.mytt.common.model.util.util;
+package com.mytt.common.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;

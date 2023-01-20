@@ -1,4 +1,4 @@
-package com.mytt.common.model.util;
+package com.mytt.common;
 
 public interface HasIdAndEmail extends HasId {
     String getEmail();

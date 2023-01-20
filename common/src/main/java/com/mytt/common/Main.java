@@ -1,4 +1,4 @@
-package com.mytt.common.model.util;
+package com.mytt.common;
 
 public class Main {
     public static void main(String[] args) {
