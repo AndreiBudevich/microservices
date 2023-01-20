@@ -1,6 +1,5 @@
 package com.mytt.hashtranslatorservice.model;
 
-import com.mytt.common.model.util.util.validation.NoHtml;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,7 +16,6 @@ public class Application {
     @Id
     private int id;
 
-    @NoHtml
     @NotNull
     private List<String> hashes;
 
